@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div{
+            height: 400px;
+            width: 400px;
+            border:2px solid black;
+            border-radius: 8px;
+           text-align: center;
+            align-content: center;
+            box-shadow: 10px 10px 15px black;
+            border: none;
+       
+        
+        }
+        
+        h1{
+            color:black;
+            font-weight: bold;
+            position: relative;
+            bottom: 90px; 
+
+           
+        }
+        input{
+            width: 200px;
+           padding: 5px 10px;
+           margin-left: 50px;
+           outline: none;
+           border: 2px solid black;
+           border-radius: 5px;
+        }
+        button{
+            padding: 5px 10px;
+            background-color: aqua;
+            color: black;
+            position: relative;
+            left: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            /* border: none; */
+            box-shadow: 2px 3px 5px;
+            
+        }
+        h2{
+            position: relative;
+            top: 50px;
+        }
+        input:hover{
+            box-shadow: 2px 2px 5px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Add or Even </h1>
+    <input type="number" id="num">
+    <button onclick="odd()">Enter</button>
+    <h2 id="res">Result</h2>
+</div>
+<script>
+    function odd(){
+        const number=parseInt(document.getElementById("num").value);
+        const ResultElement=document.getElementById("res");
+        if(isNaN(number)){
+            ResultElement.textContent="Please enter valid number !";
+            ResultElement.style.color="red";
+        }
+        else{
+            if(number%2 ===0){
+                ResultElement.textContent=`${number} is even`;
+                ResultElement.style.color="green"
+            }
+            else{
+                ResultElement.textContent=`${number} is odd`;
+                ResultElement.style.color="blue";
+            }
+        }
+
+    } 
+</script>
+</body>
+</html>
