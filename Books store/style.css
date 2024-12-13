@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.first {
+  background-image: url(../Books\ store/images/bgi.jpg);
+  /* background-repeat: no-repeat; */
+  height: 300px;
+}
+h1,
+#p1 {
+  position: relative;
+  margin-left: 40px;
+  top: 20px;
+  color: beige;
+}
+nav {
+  position: relative;
+  top: 150px;
+  font-size: 20px;
+  color: white;
+}
+ul {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  display: inline;
+}
+.second {
+  margin: 30px;
+  font-family: serif;
+  margin-top: 20px;
+}
+.images {
+  display: flex;
+}
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+.name {
+  display: flex;
+  justify-content: space-around;
+}
+.button {
+  margin-left: 45%;
+  margin-top: 30px;
+}
+button {
+  padding: 4px 5px;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  margin-bottom: 50px;
+}
+button:hover {
+  background-color: darkcyan;
+  color: white;
+  box-shadow: 2px 3px 5px black;
+}
+footer {
+  background-color: darkcyan;
+  width: 95%;
+  height: 200px;
+  margin-left: 40px;
+  position: relative;
+  padding-top: 30px;
+  bottom: 20px;
+}
+#last {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+#live {
+  border: 1px solid white;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
